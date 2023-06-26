@@ -7,14 +7,7 @@ import java.util.List;
 public class HotelList {
     private static HotelList INSTANCE;
 
-    List<Hotel> hotelList = new ArrayList<>();
-
     public HotelList(){
-        hotelList.add(new Hotel("Hotel prova1","Gran Majestic",1,2500.94,true));
-        hotelList.add(new Hotel("Sulle colline toscane","Albergo dei Re",34,303.4,false));
-        hotelList.add(new Hotel("Albergo con la A","AHotel",44,1200.4,true));
-        hotelList.add(new Hotel("Albergo com la B","BHotel",54,1500.4,true));
-        hotelList.add(new Hotel("Costoso","Boss Hotel", 20,12200.2,true));
     }
 
     public static HotelList getInstance() {
@@ -33,7 +26,7 @@ public class HotelList {
                 "<th>" + "Prezzo" + "</th>" +
                 "<th>" + "Suite" + "</th>" +
                 "</tr>\n";
-        for (Hotel hotel : hotelList) {
+        for (Hotel hotel : HotelManager.getInstance().getHotelList()) {
             s +=
                     "<tr><td>" + hotel.getId() + "</td> <td>"
                             + hotel.getName() + "</td> <td>"
@@ -57,7 +50,7 @@ public class HotelList {
                 "<th>" + "Suite" + "</th>" +
                 "</tr>\n";
 
-        for (Hotel hotel : hotelList) {
+        for (Hotel hotel : HotelManager.getInstance().getHotelList()) {
             if (hotel.getPrice() > maxPrice && hotel.isSuite()) {
                 maxPrice = hotel.getPrice();
                 maxHotel = hotel;
@@ -75,9 +68,6 @@ public class HotelList {
     }
 
     private String allSorted(String s) {
-        List<Hotel> newHotelList = new ArrayList<>(hotelList);
-        newHotelList.sort(Comparator.comparing(Hotel::getName));
-
         s += "<table>\n" +
                 "<tr>\n" + "<th>" + "ID" + "</th>" +
                 "<th>" + "Nome" + "</th>" +
@@ -86,7 +76,7 @@ public class HotelList {
                 "<th>" + "Suite" + "</th>" +
                 "</tr>\n";
 
-        for (Hotel hotel : newHotelList) {
+        for (Hotel hotel : HotelManager.getInstance().sortHotel()) {
             s += "<tr><td>" + hotel.getId() + "</td> <td>"
                     + hotel.getName() + "</td> <td>"
                     + hotel.getDescription() + "</td> <td>"
@@ -98,7 +88,7 @@ public class HotelList {
         return s;
     }
 
-    String hotelActions(String command, String s) {
+    public String hotelActions(String command, String s) {
         return switch (command.toLowerCase()) {
             case "all" -> toJSON(s);
             case "most_expensive" -> moreExpensive(s);

@@ -1,6 +1,7 @@
-package org.example;
+package org.example.HTTPServer;
 
 import com.sun.net.httpserver.HttpServer;
+import org.example.HTTPServer.MyHandler;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
