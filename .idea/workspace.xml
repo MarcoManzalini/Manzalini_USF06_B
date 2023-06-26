@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="371fda00-2a19-4b8f-8679-31368f264d32" name="Changes" comment="Exam HTTP">
+    <list default="true" id="371fda00-2a19-4b8f-8679-31368f264d32" name="Changes" comment="Exam TCP">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TCPClient/CustomFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/HotelList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/HTTPServer/HotelList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/HTTPServer/MyHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/HTTPServer/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/HTTPServer/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/HTTPServer/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +39,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Desktop/HttpSrver&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Desktop/SwingJson&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -54,7 +52,14 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HTTPServer">
+  <component name="RunManager" selected="Application.CLient">
+    <configuration name="CLient" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="org.example.TCPClient.App" />
+      <module name="HttpSrver" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HTTPServer" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="org.example.HTTPServer.Server" />
       <module name="HttpSrver" />
@@ -77,6 +82,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.TCPSERVER" />
+      <item itemvalue="Application.CLient" />
       <item itemvalue="Application.HTTPServer" />
     </list>
     <recent_temporary>
@@ -96,7 +102,8 @@
       <workItem from="1687762959033" duration="41000" />
       <workItem from="1687763036848" duration="2544000" />
       <workItem from="1687766143199" duration="888000" />
-      <workItem from="1687767051611" duration="1799000" />
+      <workItem from="1687767051611" duration="2250000" />
+      <workItem from="1687769360978" duration="701000" />
     </task>
     <task id="LOCAL-00001" summary="Exam HTTP">
       <created>1687765303470</created>
@@ -105,7 +112,21 @@
       <option name="project" value="LOCAL" />
       <updated>1687765303470</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Exam TCP">
+      <created>1687768965683</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1687768965683</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Exam TCP">
+      <created>1687769094914</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1687769094914</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +134,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Exam HTTP" />
-    <option name="LAST_COMMIT_MESSAGE" value="Exam HTTP" />
+    <MESSAGE value="Exam TCP" />
+    <option name="LAST_COMMIT_MESSAGE" value="Exam TCP" />
   </component>
 </project>
