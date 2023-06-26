@@ -3,6 +3,8 @@
 HTTP - Comandi
 
 
-?command="nome comando" - all, more_expensive, all_sorted 
+formato comando -> ?command="nome comando" 
 
-Porta= 8001
+Lista Comandi -> all, more_expensive, all_sorted 
+
+Porta -> 8001
