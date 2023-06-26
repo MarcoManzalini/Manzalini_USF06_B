@@ -54,7 +54,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TCPSERVER">
+  <component name="RunManager" selected="Application.HTTPServer">
     <configuration name="HTTPServer" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="org.example.HTTPServer.Server" />
       <module name="HttpSrver" />

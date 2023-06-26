@@ -2,7 +2,6 @@ package org.example.HTTPServer;
 
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
-import org.example.HotelList;
 
 import java.io.*;
 import java.net.URI;

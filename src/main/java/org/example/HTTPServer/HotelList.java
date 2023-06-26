@@ -1,8 +1,10 @@
-package org.example;
+package org.example.HTTPServer;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import org.example.Hotel;
+import org.example.HotelManager;
 
 public class HotelList {
     private static HotelList INSTANCE;
